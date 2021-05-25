@@ -1,0 +1,122 @@
+:root{
+    --red: #E50914;
+    --black: #141414;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+button{
+    cursor: pointer;
+}
+
+/* Base Elements */
+
+body{
+    background: var(--black);
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header .logo{
+    color: var(--red);
+    font-family: "Arial Black", Times;
+    font-size: 40px;
+
+}
+
+header a {
+    color: #AAA;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+header a:hover{
+    transition: 0.5s all;
+    color: #fff;
+}
+
+
+/* BannerMovie  */
+
+.bannerMovie{
+    font-size: 16px;
+    background: linear-gradient(#0005,#000), url('/img/legado_de_jupter.jpg') top;
+    background-size: cover;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.bannerMovie .description{
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.bannerMovie .title{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS',  sans-serif;
+}
+
+.bannerMovie .button{
+    background-color: #0005;
+    border: none;
+    color: #fff;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    outline: none;
+}
+
+.bannerMovie .button i {
+    margin-right: 5px;
+}
+
+.bannerMovie .button:hover{
+    background-color: #fff;
+    color: #000;
+    transition: 0.8s ease all;
+
+}
+
+
+/* WRAPPER = ENVELOPAR
+*/
+
+.container{
+    margin-left: 20px;
+}
+
+.bannerMovie .container {
+    max-width: 70%;
+}
+
+
+.boxMovie{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+
+.carousel{
+    margin-top: 5px;
+}
